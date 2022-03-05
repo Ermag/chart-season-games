@@ -1,6 +1,6 @@
-# chart-season-games
+# NBA Season Explorer
 
-This template should help get you started developing with Vue 3 in Vite.
+Web app that allows user to plot and filter NBA season matches.
 
 ## Recommended IDE Setup
 
