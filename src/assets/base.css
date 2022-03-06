@@ -28,5 +28,4 @@ body {
     flex-direction: column;
     background: var(--background-body);
     font-family: var(--font-family);
-    color: var(--font-color);
 }

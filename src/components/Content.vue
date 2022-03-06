@@ -1,20 +1,28 @@
 <script setup>
-import Dashboard from "../components/Dashboard.vue";
+import { storeToRefs } from "pinia";
+import { useMatchesStore } from "../store/matches";
+import SeasonExplorerChart from "../components/SeasonExplorerChart.vue";
 import MessageItem from "./MessageItem.vue";
 import DataIcon from "./icons/IconData.vue";
+
+const store = useMatchesStore();
+const { matches, hasImportError, importMissingFields } = storeToRefs(store);
 </script>
 
 <template>
     <main>
-        <MessageItem>
+        <MessageItem v-if="!matches.length || hasImportError">
             <template #icon>
                 <DataIcon />
             </template>
-
-            {{ $t("noDataMsg") }}
+            {{
+                hasImportError
+                    ? $t("missingDataFields", [importMissingFields.join(", ")])
+                    : $t("noDataMsg")
+            }}
         </MessageItem>
 
-        <Dashboard />
+        <SeasonExplorerChart v-else />
     </main>
 </template>
 

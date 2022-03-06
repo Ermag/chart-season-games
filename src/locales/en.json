@@ -1,4 +1,10 @@
 {
-    "noDataMsg": "No data to show, please import by clicking the button above!",
-    "importData": "Import Data"
+    "noDataMsg": "No data to show, please import by clicking the button above.",
+    "importData": "Import Data",
+    "csvImportMsg": "Please, paste a valid CSV below:",
+    "missingDataFields": "The following fields are missing in the dataset you have provided: {0}.",
+    "selectTeams": "Select teams",
+    "teams": "Teams",
+    "selectSetting": "Select setting",
+    "setting": "Setting"
 }
