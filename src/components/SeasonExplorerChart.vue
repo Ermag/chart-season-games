@@ -93,33 +93,7 @@ store.$subscribe(() => {
 });
 
 const chartOptions = ref({
-    chart: {
-        id: "matches",
-        fontFamily: "Poppins, sans-serif",
-        foreColor: "#F9FAFB",
-        stacked: false,
-        toolbar: {
-            show: false,
-        },
-    },
-    stroke: {
-        curve: "smooth",
-    },
-    tooltip: {
-        shared: true,
-        x: {
-            show: false,
-            format: "dd MMM HH:mm",
-        },
-    },
-    xaxis: {
-        type: "datetime",
-    },
-    legend: {
-        position: "top",
-        horizontalAlign: "right",
-        offsetX: -10,
-    },
+    ...CONFIG.chartDefaultOptions,
 });
 </script>
 

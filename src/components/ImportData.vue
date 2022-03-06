@@ -42,5 +42,3 @@ function promptForCSVData() {
 <template>
     <Button :label="$t('importData')" @click="promptForCSVData"></Button>
 </template>
-
-<style scoped></style>

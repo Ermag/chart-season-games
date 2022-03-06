@@ -1,5 +1,4 @@
 <script setup>
-// import { ref } from "vue";
 import VueMultiselect from "vue-multiselect";
 import { storeToRefs } from "pinia";
 import { CONFIG } from "../config";
