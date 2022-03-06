@@ -7,7 +7,9 @@ defineProps({
 </script>
 
 <template>
-    <section>1234</section>
+    <section>
+        <slot></slot>
+    </section>
 </template>
 
 <style scoped>

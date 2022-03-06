@@ -17,6 +17,7 @@ onMounted(() => {
 </template>
 
 <style>
+@import "vue-multiselect/dist/vue-multiselect.css";
 @import "./assets/base.css";
 
 #app {

@@ -23,5 +23,9 @@ button {
     font-size: 15px;
     color: var(--font-color);
     cursor: pointer;
+    border: 1px solid transparent;
+}
+button:hover {
+    border-color: var(--font-color);
 }
 </style>

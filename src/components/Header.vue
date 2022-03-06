@@ -1,5 +1,5 @@
 <script setup>
-import Button from "./Button.vue";
+import ImportDataButton from "./ImportData.vue";
 
 defineProps({
     title: {
@@ -12,7 +12,7 @@ defineProps({
 <template>
     <header>
         <div>{{ title }}</div>
-        <Button :label="$t('importData')"></Button>
+        <ImportDataButton />
     </header>
 </template>
 
@@ -26,6 +26,7 @@ header {
     width: 100%;
     border-bottom: 1px solid rgba(112 119 144 / 25%);
     padding: 0 30px;
+    color: var(--font-color);
 }
 div {
     padding: 20px 30px;
