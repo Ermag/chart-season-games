@@ -28,6 +28,7 @@ function processData(dataString) {
         matchesStore.importMissingFields = missingFields;
     } else {
         matchesStore.$patch((state) => {
+            state.hasImportError = false;
             state.matches = data.rows;
         });
     }
